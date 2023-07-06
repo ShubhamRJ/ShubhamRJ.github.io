@@ -14,7 +14,7 @@ lang: en
 
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: America/New_York
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -38,17 +38,15 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Shubham
+  name: Shubham Jawandhiya
   email: shubhamjawandhiya304@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/shubhamjawandhiya/
     - https://twitter.com/ShubhamRJ28     # change to your twitter homepage
     - https://github.com/ShubhamRJ       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
-google_site_verification:               # fill in to your verification string
+google_site_verification: 0jwnZwr_NOwf8EIdSSHtPz89Y8ZRbyx4hAi0SR3SU8o            # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
