@@ -16,6 +16,11 @@ platforms:
     type: Linkedin
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
+
+  -
+    type: BuyMeCoffee
+    icon: "fa fa-coffee"
+    link: "https://www.buymeacoffee.com/shubhamjawandhiya"
   #
   # -
   #   type: Weibo

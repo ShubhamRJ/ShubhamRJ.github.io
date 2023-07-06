@@ -19,12 +19,12 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Shubham                         # the main title
+title: Shubham's Blog                         # the main title
 
-tagline: Personal Blog   # it will display as the sub-title
+tagline: Blog   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  My personal blog site
+  Personal playground for sharing my thoughts and ideas.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://shubhamrj.github.io/'
@@ -79,7 +79,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/favicons/programming.png
+avatar: /assets/img/favicons/favicon.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
