@@ -20,12 +20,12 @@ Got a recommendation? Feel free to text me on my socials!
 ### Science
 1. <a href="https://www.youtube.com/@MarkRober" target="_blank">Mark Rober</a> - One of my favourite science creators. He's videos are on next level!
 2. <a href="https://www.youtube.com/@Vsauce" target="_blank">VSauce</a> - A creator I wish would be as active as before. He has answered one of the weirdest science questions. Watch his Mindfield series if you are interested in Philosophy and Psychology. 
-3. <a href="https://www.youtube.com/@kurzgesagt">Kurzgesagt – In a Nutshell</a> - Very cool illustrations about interesting questions in science.
+3. <a href="https://www.youtube.com/@kurzgesagt" target="_blank">Kurzgesagt – In a Nutshell</a> - Very cool illustrations about interesting questions in science.
 
 ### Other
 
 1. <a href="https://www.youtube.com/@RealLifeLore" target="_blank">RealLifeLore</a> - One of the best channels to just grow your geo-political and geo-economics knowledge. Highly recommended!
-2. <a href="https://www.youtube.com/@ImprovementPill">Improvement Pill</a> - One of the well-subscribed channel for ideas in building your own personality.
+2. <a href="https://www.youtube.com/@ImprovementPill" target="_blank">Improvement Pill</a> - One of the well-subscribed channel for ideas in building your own personality.
 <br/>
 <hr/>
 
@@ -44,7 +44,7 @@ While the major top tech engineering blogs are always a great read like <a href=
 
 ### Non-tech Blogs
 
-1. <a href="https://thedankoe.com/blog/">Dan Koe</a> One of my recent follows. He has some unique ideas about human potential, lifestyle design, & one-person businesses. (and he's very active of Threads :P)
+1. <a href="https://thedankoe.com/blog/" target="_blank">Dan Koe</a> One of my recent follows. He has some unique ideas about human potential, lifestyle design, & one-person businesses. (and he's very active of Threads :P)
 <br/>
 <hr/>
 
