@@ -27,6 +27,9 @@ Let's explore...
 
 (Note: We are not considering attachments, images and other asset files in an email still )
 
+ - This is close to driving 14,910 gasoline-powered passenger vehicles driven for one year.
+ - To offset one tonne of CO₂, you would need between 31-46 trees.
+
 ## My ideas on solving this
 
 1. Allow users to create deletion schedules (user-defined periods) for their labels.  
