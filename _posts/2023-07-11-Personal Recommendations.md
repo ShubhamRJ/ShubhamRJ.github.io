@@ -59,9 +59,20 @@ I generally follow newsletters to keep up-to-date with latest in specific techno
 <br/>
 <hr/>
 
-## <b><i>Courses</i></b>
+## Anime
 
-### Tech Courses
+I have either completed/up-to-date with these anime series. I have also ranked them in order of my personal preference. Pokemon will always be the best!
 
-### Non-tech Courses
+1. <strong>Demon Slayer </strong>(Animation is next level)
+2. <strong>Full Metal Alchemist Brotherhood </strong>(Story >>>>>)
+3. <strong>Steins Gate </strong>(Time travel done right)
+4. <strong>Naruto </strong>(The OG - I love how every character has a backstory)
+5. <strong>Haikyu </strong>(Got me into volleyball)
+6. <strong>Jujutsu Kaisen </strong>
+7. <strong>Bleach </strong>
+8. <strong>Hunter x Hunter </strong>
+9. <strong>Fairy Tail </strong>(one of my first anime)
+10. <strong>Death Note </strong>
+
+Yet to watch: Attack on Titan, One Piece, Doctor Stone
 
