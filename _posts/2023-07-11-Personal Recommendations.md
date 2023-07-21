@@ -40,7 +40,8 @@ Got a recommendation? Feel free to text me on my socials!
 While the major top tech engineering blogs are always a great read like <a href="https://netflixtechblog.com/?gi=96c0220700d2" target="_blank">Netflix </a>, <a href="https://www.uber.com/blog/" target="_blank">Uber </a>, <a href="https://ai.googleblog.com/" target="_blank">Google Research</a> - these are the lesser known blogs that I love following:
 
 1. <a href="https://blog.reachsumit.com/" target="_blank">Sumit's Diary </a> I liked Sumit's research summaries and other content on Recommendation systems using LLMs.
-2. <a href="https://web.dev/" target="_blank">web.dev</a> My personal favourite frontend engineering resource for learning and reading usecases.
+2. <a href="https://aman.ai/recsys/papers/" target="_blank">Aman AI </a> Amanshu's blog is a great resource for research papers in Recommendation systems.
+3. <a href="https://web.dev/" target="_blank">web.dev</a> My personal favourite frontend engineering resource for learning and reading usecases.
 
 ### Non-tech Blogs
 
