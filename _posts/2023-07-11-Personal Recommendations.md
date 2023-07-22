@@ -31,6 +31,7 @@ Got a recommendation? Feel free to text me on my socials!
 
 ## <b><i>Creators</i></b>
 1. <a href="https://www.linkedin.com/in/addyosmani/" target="_blank">Addy Osmani</a> One of the creators whose LinkedIn content never never disappoints.
+2. <a href="https://www.youtube.com/@CleoAbram/" target="_blank">Cleo Abram</a> Her content on optimistic tech stories is a fresh change from the pessimistic news articles.
 <br/>
 <hr/>
 
