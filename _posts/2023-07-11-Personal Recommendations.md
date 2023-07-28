@@ -8,7 +8,7 @@ pin: true
 
 My list of personal favourties of anything and everything at one place. These are highly curated channels and blogs which I have been following regularly for more than half a year. And also so that I can remove my infinite bookmarks 😛
 
-Got a recommendation? Feel free to text me on my socials!
+Got a recommendation? Let me know in the comments below!
 <br/>
 <hr/>
 

@@ -43,6 +43,6 @@ For that -
 2. The platforms can add duplication detection (basically a reverse image/video media search functionality) to detect if the media is already present on the platform. If it is, prompt the user to repost the original post. This is not very feasible in current scenario as it is quite difficult to find the original creator of the post and also since there are huge number of copies already present.
 
 
-<i>P.S. I can go into deep implementation details and maybe I could be wrong about the technical effort required for this. BUT, in my experience, I still think this is very doable</i>
+<i>P.S. I will try to update the exact implementation details soon. And I could be wrong about the technical effort required for this. BUT, in my experience, I still think this is very doable</i>
 
-If you can think of any scenarios I might have missed, I'd love to know and find solutions/work-arounds for them. Feel free to reach out to me on my socials.
+If you can think of any scenarios I might have missed, I'd love to know and find solutions/work-arounds for them. Let me know in the comments below!
