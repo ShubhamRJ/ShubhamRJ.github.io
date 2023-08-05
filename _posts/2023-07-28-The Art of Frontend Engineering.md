@@ -8,7 +8,7 @@ tags: [Frontend, Engineering Practices]
 Summary: With my 3 years of experience in the world of frontend with ReactJS, these is an exhuastive list of practices that I have found to be useful in my day to day work. This is a living document and will be updated as I learn more.
 
 ## Motivation
-So I have been professionally developing frontend systems with ReactJS from past 3 years and I wanted to document my learnings and experiences in this blog.
+Personally, as a college undergrad I knew more about the high-level backend systems (because of its need in system design interviews) and ML/AI (cause its general fame) but all I knew about frontend was HTML, CSS, JS, jQuery etc. As I joined my first full-time job as a frontend software engineer at [Lowe's](www.lowes.com) I realized how naive I was. Thus, writing this article to share my experience.
 <br/>
 <hr>
 
@@ -41,9 +41,9 @@ So I have been professionally developing frontend systems with ReactJS from past
         5. [❗️Must] Linters ([Eslint](https://eslint.org/docs/latest/), [Prettier](https://prettier.io/docs/en/))
         6. [Babel](https://babeljs.io/docs/)
       - And frameworks like (any one of each of these is fine):
-        1. [❗️Must]Web frameworks - React, Angular, Vue, NextJS etc.
+        1. [❗️Must] Web frameworks - React, Angular, Vue, NextJS etc.
         2. State management frameworks - Redux, redux-saga, MobX, Apollo etc.
-        3. [❗️Must]Testing frameworks - Jest, Enzyme, React Testing Library etc.
+        3. [❗️Must] Testing frameworks - Jest, Enzyme, React Testing Library etc.
         4. CSS frameworks - styled-components, css-in-js, css-modules etc.
    6. #### CI/CD
    [❗️Must] Git and Docker are the must-know and ubiquitous to software engineering in general. Apart from these, <strong>following are good-to-know only</strong> for frontend engineering <i>(I say good-to-know as the CI/CD varies a lot from org to orgs and each one will have its own learning curve)</i>:
@@ -125,7 +125,12 @@ So I have been professionally developing frontend systems with ReactJS from past
       - A/B Testing and multi-variate testing
       - Feature Flags and environment variables
       - Dev, Stage, Dark, Production environments
-   5. Branching strategies, PR revies and code reviews - This depends a lot on the business criticality of your project but read about it. Integrate tools like SonarQube, etc. to your CI/CD pipeline.
+   5. Branching strategies, PR reviews and code reviews - This depends a lot on the business criticality of your project but read about it. Integrate tools like SonarQube, etc. to your CI/CD pipeline.
+      1. Integrate tools like SonarQube and add merge check based on sonarqube report. This will automatically block merges for untested code, code smells. etc.
+      2. Keep a multi-level review strategy
+         1. Junior engineers should focus on ensuring correctness of type definitions, linting, logic correctness, styling, use of design system etc.
+         2. Senior engineers should focus on ensuring correctness of business logic, maintaining repository standards, optimizations, performance, etc.
+      3. Last but not the least, PR reviews was one place where I learned the most from comments of senior engineers.
    6. Bounce rates, conversion rates, etc. - Understand the basics of how these are calculated and what they mean.
 
 
@@ -136,7 +141,7 @@ So I have been professionally developing frontend systems with ReactJS from past
 <hr>
 
 ## Personal Note
-   Before entering frontend engineering, I used to consider it as a boring type of software engineering. Who would sit and write CSS and edit pixels huh? But working through a wide variety of tickets, features, experiments and bugs I understood:
+   Before entering frontend engineering, I used to consider it as a boring type of software engineering. Who would someone sit and write CSS and edit pixels huh? But working through a wide variety of tickets, features, experiments and bugs I understood:
    - It's a very rewarding field. You get direct user feedbacks via analytics and you see people interacting with your work.
    - A simple, blazing fast UI with a good UX can literally make a difference of millions of dollars.
    - A normal average person does not care about your caching techniques etc. They just want to get their work done. So keep it simple. Amazon's UI is not the best out there but it works and earns them billions of dollars.
