@@ -8,7 +8,7 @@ tags: [Frontend, Engineering Practices]
 Summary: With my 3 years of experience in the world of frontend with ReactJS, these is an exhuastive list of practices that I have found to be useful in my day to day work. This is a living document and will be updated as I learn more.
 
 ## Motivation
-Personally, as a college undergrad I knew more about the high-level backend systems (because of its need in system design interviews) and ML/AI (cause its general fame) but all I knew about frontend was HTML, CSS, JS, jQuery etc. As I joined my first full-time job as a frontend software engineer at [Lowe's](www.lowes.com) I realized how naive I was. Thus, writing this article to share my experience.
+Personally, as a college undergrad I knew more about the high-level backend systems (because of its need in system design interviews) and ML/AI (cause its general fame) but all I knew about frontend was HTML, CSS, JS, jQuery etc. As I joined my first full-time job as a frontend software engineer at [Lowe's](https://www.lowes.com/) I realized how naive I was. Thus, writing this article to share my experience.
 <br/>
 <hr>
 
