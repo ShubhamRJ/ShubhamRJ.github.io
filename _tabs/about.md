@@ -6,7 +6,8 @@ order: 4
 
 Hey there! 👋🏻 I am <strong>Shubham</strong>, a 25 y'old software engineer in New York (originally from India).
 
-> <strong>Currently</strong>: Grad student looking out for my next opportunity.
+> <strong>Currently</strong>: Graduate CS student at Stony Brook University, NY looking out for software engineering opportunities.   
+{: .prompt-tip }
 
 I like to consider myself a polymath when it comes to software engineering. I have an in-depth knowledge of frontend engineering (primarily React), NLP, Docker. etc. and I also have a working knowledge of backend engineering, infrastructure engineering as well. I worked on some pretty cool stuff in my previous opportunity - check out my work and recommendations <a href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank">here</a>.
 
