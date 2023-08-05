@@ -1,7 +1,7 @@
 ---
-title: Frontend Design, Code Quality, CI/CD and lot more....
+title: The Art of Frontend Engineering
 date: 2023-07-28 21:12:00 -0400
-categories: [Frontend, Code Quality, CI/CD]
+categories: [Frontend, Engineering Practices]
 tags: [Frontend, Engineering Practices]
 ---
 
@@ -87,6 +87,7 @@ So I have been professionally developing frontend systems with ReactJS from past
       1. Write precise and concise documentations wherever required. Aim should be on writing the smallest line that just gets the job done.
       2. Variable naming though difficult should be precise and should get the usecase of it to a new developer immediately.
       3. Write precise type definitions while developing.
+      4. Understand your CSS! flex vs grid, em vs rem, etc.
 
 3. ### Testing
    Remember the following while writing tests:
