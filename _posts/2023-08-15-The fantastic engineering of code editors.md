@@ -35,7 +35,7 @@ Let's break it down into smaller problems. What do we need to do to achieve synt
 2. We need a highlighting engine to highlight the different parts of code.
 
 ##### 2.1 Language parsing engine    
-We will build this as a server which will take the code from frontend and parse it. Why? cause supporting a wide range of languages will require building parsers for all in JS to be parsed in frontend. Seems redundant right? If we build it as a server, we can use the langauge's compiler right out-of-the-box.   
+We will build this as a server which will take the code from frontend and parse it. Why? cause supporting a wide range of languages will require building parsers for all in JS to be parsed in frontend. Seems redundant right? (This was true before but with the new WASM this might not be true anymore. But still we got good benefits of buidling a backend server. Read till the end.) If we build it as a server, we can use the langauge's compiler right out-of-the-box.   
 So we get the code from frontend  ➡️  parse it through selected language's compiler  ➡️  the compiler gives us what each keyword in the input is  ➡️   send it to highlighting engine.   
 And what you've essentially built is here is a <a href="https://langserver.org/">Language Server</a>. Wow right! This allows 1 IDE for all programming languages just like VSCode. The language server can also provide a lot more features like autocompletion and intellisense. We will see how later.   
 <a href="https://medium.com/@nadeeshaangunasinghe/why-use-language-server-aa9bb47207b8" target="_blank">More on Language Server</a>
