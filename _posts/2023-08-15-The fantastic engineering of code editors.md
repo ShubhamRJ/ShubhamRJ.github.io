@@ -39,6 +39,7 @@ We will build this as a server which will take the code from frontend and parse 
 So we get the code from frontend  ➡️  parse it through selected language's compiler  ➡️  the compiler gives us what each keyword in the input is  ➡️   send it to highlighting engine.   
 And what you've essentially built is here is a <a href="https://langserver.org/">Language Server</a>. Wow right! This allows 1 IDE for all programming languages just like VSCode. The language server can also provide a lot more features like autocompletion and intellisense. We will see how later.   
 <a href="https://medium.com/@nadeeshaangunasinghe/why-use-language-server-aa9bb47207b8" target="_blank">More on Language Server</a>
+<a href="https://microsoft.github.io/language-server-protocol/implementors/servers/" target="_blank">List of language servers</a>
 
 ##### 2.2 Highlighting engine
 The <code>textarea</code> html element DOES NOT allow color its content. Ouch! We need to re-engineer our MVP code editor. <i>(Often the case with lots of projects in their initial stages. The trial and error method gets you to the most efficient design which is generally automatically scalable for new features.)</i> Let's see how - 
@@ -75,15 +76,15 @@ Providing diffing is another feature - you can use git or you can use the underl
 
 ## How do actual code editors work?
 These are the most commonly used code-editors out there. And if you actually go through the history of code editors, syntax and semantic highlighting wasn't there till 2009 <a href="https://zwabel.wordpress.com/2009/01/08/c-ide-evolution-from-syntax-highlighting-to-semantic-highlighting/" target="_blank">refer </a>. So we should be super grateful to the developers of these code editors for making our lives easier. 
-1. <a href="https://github.com/microsoft/monaco-editor#concepts">Monaco</a> - The most used and the one that powers VS Code. 
-2. <a href="https://ace.c9.io/#nav=about">Ace</a>
-3. <a href="https://codemirror.net/">CodeMirror</a>
+1. <a href="https://github.com/microsoft/monaco-editor#concepts" target="_blank">Monaco</a> - The most used and the one that powers VS Code. 
+2. <a href="https://ace.c9.io/#nav=about" target="_blank">Ace</a>
+3. <a href="https://codemirror.net/" target="_blank">CodeMirror</a>
 
-A comparison of these code editors is available <a href="https://blog.replit.com/code-editors">here</a>.
+A comparison of these code editors is available <a href="https://blog.replit.com/code-editors" target="_blank">here</a>.
 
 ## Integration with your application
 
-I won't write about this myself as there are lots of tutorials available. People have open-sourced this code-editors in the form of npm packages and their versions in frameworks like react. <a href="https://blog.logrocket.com/build-web-editor-with-react-monaco-editor/">Refer</a>
+I won't write about this myself as there are lots of tutorials available. People have open-sourced these code-editors in the form of npm packages and their versions in frameworks like react. <a href="https://blog.logrocket.com/build-web-editor-with-react-monaco-editor/" target="_blank">Refer</a>
 
 ## Conclusion
 That's it! This is the world of code editors. With the number of features modern day code-editors like VSCode, IntelliJ IDEs etc. provide its just insane to even think about the engineering and optimizations that go into building these blazing fast, intelligent code editors. Thanks for reading!
