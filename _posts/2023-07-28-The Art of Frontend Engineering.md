@@ -1,8 +1,8 @@
 ---
 title: The Art of Frontend Engineering
 date: 2023-07-28 21:12:00 -0400
-categories: [Frontend, Engineering Practices]
-tags: [Frontend, Engineering Practices]
+categories: [Frontend, Engineering]
+tags: [Frontend, Engineering]
 ---
 
 Summary: With my 3 years of experience in the world of frontend with ReactJS, these is an exhuastive list of practices that I have found to be useful in my day to day work. This is a living document and will be updated as I learn more.
