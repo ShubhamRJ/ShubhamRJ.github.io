@@ -39,8 +39,8 @@ I am taking up Distributed Systems [ <a href="http://mpaxos.com/teaching/ds/23fa
   <tr>
     <td>4</td>
     <td>Primary Backup Replication</td>
-    <td>Pending</td>
-    <td>Pending</td>
+    <td><a href="http://mpaxos.com/teaching/ds/23fa/readings/vm-ft.pdf" target="_blank">The Design of Practical System <br> for Fault Tolerant Virtual Machines</a></td>
+    <td><a href="https://shubhamjawandhiya.notion.site/Primary-Backup-Replication-51b2c3a0c73e40dda3fedc056e0cc11f" target="_blank">Notes </a></td>
   </tr>
   <tr>
     <td>5</td>
