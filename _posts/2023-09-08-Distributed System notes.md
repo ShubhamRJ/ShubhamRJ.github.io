@@ -45,8 +45,8 @@ I am taking up Distributed Systems [ <a href="http://mpaxos.com/teaching/ds/23fa
   <tr>
     <td>5</td>
     <td>Raft</td>
-    <td>Pending</td>
-    <td>Pending</td>
+    <td><a href="http://mpaxos.com/teaching/ds/23fa/readings/raft.pdf" target="_blank">In Search of an Understandable <br> Consensus Algorithm</a></td>
+    <td><a href="https://shubhamjawandhiya.notion.site/Raft-0b4dfc85e2714ed4b230c59071b49f84" target="_blank">Notes </a></td>
   </tr>
   <tr>
     <td>6</td>
