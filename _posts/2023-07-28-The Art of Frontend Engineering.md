@@ -20,7 +20,7 @@ Personally, as a college undergrad I knew more about the high-level backend syst
    2. #### Backend
    An interesting thing to know is the <strong><i>Backend-for-frontend (BFF) design pattern</i></strong> - which basically allows for a common main backend system and multiple sub-backend systems for each individual frontend-specific needs. An e-commerce website is a good example of this - where you have a common backend for all the products and a separate backend for each of the pages (to structure/combine/cache as per the need of the page).
    3. #### SEO
-  So when I say SEO, its not just about ensuring you have the correct <og> tags, <meta> tags etc. Your <strong><i>decision of (SSR) server-side rendered pages vs (CSR) client-side rendered pages</i></strong> depends on whether you want to be SEO friendly or not.     
+  So when I say SEO, its not just about ensuring you have the correct `<og>` tags, `<meta>` tags etc. Your <strong><i>decision of (SSR) server-side rendered pages vs (CSR) client-side rendered pages</i></strong> depends on whether you want to be SEO friendly or not.     
       - If you building web pages that lie behind a login system (such as cloud consoles, dashboards, profile pages etc.) these are not gonna be crawled by a web crawler. So you can go with CSR and focus on UI with a philosophy of "load as needed".   
       - If you building for e-commerce websites, blogs, news, documentations etc. you want your pages to be crawled and ranked high up in the search results as this primarily drives your revenue. So you need SSR pages and focus on UI with a philosophy of "load only what's important and fast".    
     The choice between CSR vs SSR drives further decisions such as:
@@ -46,7 +46,7 @@ Personally, as a college undergrad I knew more about the high-level backend syst
         3. [❗️Must] Testing frameworks - Jest, Enzyme, React Testing Library etc.
         4. CSS frameworks - styled-components, css-in-js, css-modules etc.
    6. #### CI/CD
-   [❗️Must] Git and Docker are the must-know and ubiquitous to software engineering in general. Apart from these, <strong>following are good-to-know only</strong> for frontend engineering <i>(I say good-to-know as the CI/CD varies a lot from org to orgs and each one will have its own learning curve)</i>:
+   [❗️Must] Git and Docker are the must-know and ubiquitous to software engineering in general. Apart from these, <strong>following are good-to-know only</strong> for frontend engineering <i>(I say good-to-know as the CI/CD varies a lot from org-to-org and each one will have its own learning curve. You'll learn most of it on the job but knowing the concepts behind any makes it easier for you to understand all variants of it)</i>:
       1. Cloud - AWS (preferably and most-used), GCP, Azure etc. Personally, I have never had to know the whole cloud - most of it is taken care of by infrastructure teams. But, being frontend-focused in this article, the following are good-to-know:
          1. Cloud buckets and versioning.
          2. Content Delivery Network (CDN) - CloudFront, Akamai etc.
@@ -84,18 +84,18 @@ Personally, as a college undergrad I knew more about the high-level backend syst
    6. #### Avoid prop-drilling
     This is a very common anti-pattern. You should avoid passing props down the component tree. Use React's Context API or state-management libraries for this.
    7. #### Others
-      1. Write precise and concise documentations wherever required. Aim should be on writing the smallest line that just gets the job done.
+      1. Write precise and concise documentations wherever required. Aim should be on writing the smallest line that just gets the job done. You don't have to spoon-feed the whole functionality. Just documenting not-so-apparent idea behind some code is generally enough.
       2. Variable naming though difficult should be precise and should get the usecase of it to a new developer immediately.
       3. Write precise type definitions while developing.
       4. Understand your CSS! flex vs grid, em vs rem, etc.
 
 3. ### Testing
    Remember the following while writing tests:
-   1. #### Understanding the focus of your test
-    You are building a frontend system for user's to interact. So you should be testing exactly that. Now you make think, isn't that obvious? But again, more often than not, I have observed people focusing on testing their code and internal functions to get 100% code coverage. Coverage report should act as a feedback for you to understand what cases you might have missed in your tests but more importantly in your UI. You've build an UI based on an API's success response but what if the API fails?
+   1. #### Understand the focus of your test
+    You are building a frontend system for user's to interact. So you should be testing exactly that. Now you make think, isn't that obvious? But again, more often than not, I have observed people focusing on testing their code and internal functions to get 100% code coverage. Coverage report should act as a feedback for you to understand what cases you might have missed in your tests but more importantly in your UI. You've built an UI based on an API's success response but what if the API fails?
     - Test events and user interactions
     - You are doing frontend testing and not API testing. MOCK your APIs. Use mock servers for this.
-    - Do not just trigger an event and do nothing cause you got the coverage by just the trigger. Assert the UI changes.
+    - Do not just trigger an event and do nothing cause you got the coverage by just the trigger. <b>Assert the UI changes.</b>
     - Unit tests should be component level - do not make it an integration test where you test what's happening in 10th child component.   
     This is why, understanding your testing frameworks A-Z is very important.
     1. #### Integration tests
@@ -142,11 +142,12 @@ Personally, as a college undergrad I knew more about the high-level backend syst
 
 ## Personal Note
    Before entering frontend engineering, I used to consider it as a boring type of software engineering. Who would someone sit and write CSS and edit pixels huh? But working through a wide variety of tickets, features, experiments and bugs I understood:
-   - It's a very rewarding field. You get direct user feedbacks via analytics and you see people interacting with your work.
-   - A simple, blazing fast UI with a good UX can literally make a difference of millions of dollars.
+   - It's a very rewarding field. You get direct user feedbacks via analytics and you see people interacting with your work. More importantly you have something to showcase.
+   - A simple, blazing fast UI with a good UX can literally make a difference of millions of dollars. <a href="https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales" target="_blank">Read</a>
    - A normal average person does not care about your caching techniques etc. They just want to get their work done. So keep it simple. Amazon's UI is not the best out there but it works and earns them billions of dollars.
    - Understanding the life-cycle of frameworks and libraries is very important. Especially when the whole frontend engineering depends a lot on open-source.
    - Learn principles not implementations. The implementation might change every 6 months but the principles remain the same.
+   - Once you are comfortable with frontend engineering, try contributing to open-source. Frontend is one of the domains where you don't need a huge domain knowledge before you try contributing to open-source unlike ML (pytorch etc.) and infrastructure (kubernetes etc.).
 
 <br/>
 <hr>
