@@ -51,8 +51,8 @@ I am taking up Distributed Systems [ <a href="http://mpaxos.com/teaching/ds/23fa
   <tr>
     <td>6</td>
     <td>Paxos</td>
-    <td>Pending</td>
-    <td>Pending</td>
+    <td><a href="http://mpaxos.com/teaching/ds/23fa/readings/paxos.pdf" target="_blank">Paxos</a></td>
+    <td><a href="https://shubhamjawandhiya.notion.site/Paxos-6903c4b94111448ababbefdc3193dd17?pvs=4" target="_blank">Notes </a></td>
   </tr>
   <tr>
     <td>7</td>
