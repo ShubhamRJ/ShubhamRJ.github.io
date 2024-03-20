@@ -62,6 +62,6 @@ Got a recommendation? Let me know in the comments below!
    1. <a href="https://www.youtube.com/@UsenixOrg" target="_blank">USENIX</a>
    2. <a href="https://www.youtube.com/@infoq" target="_blank">InfoQ</a>
    3. <a href="https://www.youtube.com/@StrangeLoopConf" target="_blank">Strange Loop Conference</a>
-2. Blogs  
-   Coming soon...
+2. <a href="https://github.com/theanalyst/awesome-distributed-systems" target="_blank">Awesome Distributed Systems</a>
+3. <a href="https://news.ycombinator.com/item?id=25987664" target="_blank">HackerNews Thread</a>
 
