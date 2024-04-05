@@ -75,6 +75,7 @@ I have either completed/up-to-date with these anime series. I have also ranked t
 8. <strong>Hunter x Hunter </strong>
 9. <strong>Fairy Tail </strong>(one of my first anime)
 10. <strong>Death Note </strong>
+11. <strong>Solo Leveling </strong>
 
 Yet to watch: Attack on Titan, One Piece, Doctor Stone
 
