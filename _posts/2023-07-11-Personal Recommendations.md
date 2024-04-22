@@ -21,6 +21,7 @@ Got a recommendation? Let me know in the comments below!
 1. <a href="https://www.youtube.com/@MarkRober" target="_blank">Mark Rober</a> - One of my favourite science creators. He's videos are on next level!
 2. <a href="https://www.youtube.com/@Vsauce" target="_blank">VSauce</a> - A creator I wish would be as active as before. He has answered one of the weirdest science questions. Watch his Mindfield series if you are interested in Philosophy and Psychology. 
 3. <a href="https://www.youtube.com/@kurzgesagt" target="_blank">Kurzgesagt – In a Nutshell</a> - Very cool illustrations about interesting questions in science.
+4. <a href="https://www.youtube.com/@veritasium" target="_blank">Veritasium</a> - Needs no introduction.
 
 ### Other
 
