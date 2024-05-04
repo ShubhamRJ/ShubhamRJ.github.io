@@ -88,3 +88,6 @@ I won't write about this myself as there are lots of tutorials available. People
 
 ## Conclusion
 That's it! This is the world of code editors. With the number of features modern day code-editors like VSCode, IntelliJ IDEs etc. provide its just insane to even think about the engineering and optimizations that go into building these blazing fast, intelligent code editors. Thanks for reading!
+
+## Further Reads
+1. <a href="https://zed.dev/blog/zed-decoded-rope-sumtree" target="_blank">Internal representation of text for code-editors</a>
