@@ -3,6 +3,7 @@ title: Popular Unpopular Opinions!
 date: 2024-04-03 00:11:32 -0400
 categories: [Thoughts]
 tags: [Personal]
+published: false
 ---
 
 *Personal dump space of **interesting** popular unpopular opinions I have*
