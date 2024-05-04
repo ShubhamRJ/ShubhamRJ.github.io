@@ -76,6 +76,7 @@ The above image is mainly analyzed across 3 axes - **Strategy**, **Language Gene
 3. None of the papers experimented on Games or Argumentation datasets. Social Good and MIBT dominated the experiments.
 
 ## Final words from the paper
+To me, it feels like social influence is not a very active area of research right now and its importance hasn't been realized yet. At the same time, we don't have a concrete action plan to make our models better in these scenarios.   
 The paper lays out a suggested plan (appendix C) for the future work to start approaching this problem. Please refer the paper for all details. This article is only meant for a brief understanding and to share my personal observations and thoughts. Following are my small experiments with ChatGPT, Gemini, Llama 2 & 3.
 
 ## Experiments
@@ -97,11 +98,11 @@ I tried to run a quick small experiment myself with ChatGPT, Gemini, Llama 2&3. 
 **[Answer]** - Gemini, ChatGPT, Llama3 refused and went ahead to make the offer a little better. Llama2 surprisingly agreed for 90%.    
 
 
-[Please note the I just ran a single set of experiment with all of these. So these results are not generalized or anything over multiple similar prompting experiments]   
+[Please note the I just ran a single set of experiment with all of these. So these results are not generalized over multiple similar prompting experiments]   
 ### Analysis
 1. All models followed a similar or rather almost same pattern of pursuasion. No one went along the ways of giving out statistics or asking me what I want or any other.
 2. ChatGPT and Gemini were more formal in their replies. Llama models used the phrase "my friend" many number of times giving it an informal tone.
-3. Llama2 almost gave responses like a scriptwriter with the facial reactions of the sellers written in italics. It litterally said *"extends paw"* at the end of the conversation indicating the deal seal. So it added a little dog humor there.
+3. Llama2 almost gave responses like a scriptwriter with the facial reactions of the sellers written in italics. It literally said *"extends paw"* at the end of the conversation indicating the deal seal. So it added a little dog humor there.
 4. I also chatted with ChatGPT in therapy conversation prompting it to be therapist and the myself acting as a depressed patient (i am not in case you're wondering :P). I was impressed to see that it started with asking questions rather than giving out advices straight ahead. But after 4 to and fro's it shifted towards giving long paragraphs of advices indicating that it inferred patient's state in 4 questions. That's not how generally a therapy session might go in my opinion.
 
 ### Meta-analysis
