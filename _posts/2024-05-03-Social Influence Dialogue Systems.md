@@ -107,3 +107,6 @@ I tried to run a quick small experiment myself with ChatGPT, Gemini, Llama 2&3. 
 
 ### Meta-analysis
 I think all the models are trained to give out as much information in 1 go as possible. While in reality negotiations are generally to-and-fros about guessing the person's state of mind and orienting strategy accordingly. Asking about someone's demographics or making an educated guess to use some witty humor and knowledge tends to impress more.
+
+## Helpful resources
+Checkout <a href="https://convokit.cornell.edu/documentation/datasets.html" target="_blank">Convokit</a>
