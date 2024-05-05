@@ -52,6 +52,11 @@ Got a recommendation? Let me know in the comments below!
     <td>A critique of ANSI SQL Isolation Levels</td>
     <td><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf" target="_blank">Link</a></td>
   </tr>
+  <tr>
+    <td>8</td>
+    <td>CEPH Distributed Storage</td>
+    <td><a href="https://www.youtube.com/watch?v=PmLPbrf-x9g" target="_blank">Link</a></td>
+  </tr>
 </table>
 
 <hr/>
