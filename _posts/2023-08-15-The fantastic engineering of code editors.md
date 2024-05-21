@@ -87,7 +87,9 @@ A comparison of these code editors is available <a href="https://blog.replit.com
 I won't write about this myself as there are lots of tutorials available. People have open-sourced these code-editors in the form of npm packages and their versions in frameworks like react. <a href="https://blog.logrocket.com/build-web-editor-with-react-monaco-editor/" target="_blank">Refer</a>
 
 ## Conclusion
-That's it! This is the world of code editors. With the number of features modern day code-editors like VSCode, IntelliJ IDEs etc. provide its just insane to even think about the engineering and optimizations that go into building these blazing fast, intelligent code editors. Thanks for reading!
+That's it! This is the world of code editors. With the number of features modern day code-editors like VSCode, IntelliJ IDEs etc. provide its just insane to even think about the engineering and optimizations that go into building these blazing fast, intelligent code editors. Thanks for reading!   
+The more you read into VSCode & Monaco docs, the more you'll understand the level of complex engineering these editors hide in plain sight. Truly amazing!
 
 ## Further Reads
 1. <a href="https://zed.dev/blog/zed-decoded-rope-sumtree" target="_blank">Internal representation of text for code-editors</a>
+2. <a href="https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization" target="_blank">How VS Code optimized bracket pair colorization</a>
