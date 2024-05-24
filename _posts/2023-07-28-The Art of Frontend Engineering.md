@@ -157,3 +157,4 @@ Personally, as a college undergrad I knew more about the high-level backend syst
 1. CSS - Can't stress enough on the importance of knowing good CSS. No it's not hit & trial. [web.dev](https://web.dev/learn/css/)
 2. JS - [javascript.info](https://javascript.info/) - By far the best resource to learn JS.
 3. React - [React Docs](https://react.dev/blog/2023/03/16/introducing-react-dev) - The official docs are the best resource to learn React.
+4. Lydia Hallie - [Youtube](https://www.youtube.com/@theavocoder) - One of the best JS dev I follow.
