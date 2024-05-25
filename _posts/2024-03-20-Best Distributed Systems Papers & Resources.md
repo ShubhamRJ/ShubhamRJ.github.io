@@ -69,4 +69,5 @@ Got a recommendation? Let me know in the comments below!
    3. <a href="https://www.youtube.com/@StrangeLoopConf" target="_blank">Strange Loop Conference</a>
 2. <a href="https://github.com/theanalyst/awesome-distributed-systems" target="_blank">Awesome Distributed Systems</a>
 3. <a href="https://news.ycombinator.com/item?id=25987664" target="_blank">HackerNews Thread</a>
+4. <a href="https://www.opsschool.org/index.html" target="_blank">The Ops school</a> (Not exactly a Distributed Systems resource but still what a gem!)
 
