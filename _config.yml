@@ -17,7 +17,7 @@ title: Shubham's Diary   # the main title
 tagline: Blog   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Personal playground for sharing my thoughts and ideas.
+  Explore Shubham's insights on distributed systems, full-stack engineering, NLP, and innovative tech solutions.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://shubhamrj.github.io/'
