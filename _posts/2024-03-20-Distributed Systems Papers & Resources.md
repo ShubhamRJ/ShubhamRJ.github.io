@@ -1,12 +1,12 @@
 ---
-title: Best Distributed Systems Papers & Resources
+title: Distributed Systems Papers & Resources
 date: 2024-03-20 00:00:00 -0400
 categories: [Distributed Systems]
 tags: [Distributed Systems, Research]
 pin: false
 ---
 
-This is a list of the best Distributed Systems papers that I have already read and found super interesting. When I say interesting, I mean they are well written, introduces an interesting new idea/concept/technique and are very well explained. 
+This is a list of some great Distributed Systems papers that I have already read and found super interesting. When I say interesting, I mean they are well written, introduces an interesting new idea/concept/technique and are very well explained. 
 
 Got a recommendation? Let me know in the comments below!
 
@@ -56,6 +56,11 @@ Got a recommendation? Let me know in the comments below!
     <td>8</td>
     <td>CEPH Distributed Storage</td>
     <td><a href="https://www.youtube.com/watch?v=PmLPbrf-x9g" target="_blank">Link</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Distributed Systems Testing</td>
+    <td><a href="https://asatarin.github.io/testing-distributed-systems/" target="_blank">Link</a></td>
   </tr>
 </table>
 
