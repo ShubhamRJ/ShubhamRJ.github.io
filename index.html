@@ -1,4 +1,325 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shubham Jawandhiya — Software Engineer, writer, photographer." />
+  <title>Shubham Jawandhiya</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/post.css" />
+
+  <!-- Theme: inline to prevent flash-of-wrong-theme -->
+  <script>
+    (function () {
+      const saved = localStorage.getItem('sj-theme');
+      const preferred = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', preferred);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ── NAVIGATION ─────────────────────────────────────────────────────────── -->
+<nav>
+  <a class="nav-logo" href="#home">SJ — diary</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#blog">Writing</a></li>
+    <li><a href="#photography">Photography</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="theme-toggle" aria-label="Toggle theme"></button></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+<section id="home">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Software Engineer · Writer · Photographer</p>
+    <h1 class="hero-name">Shubham<br><em>Jawandhiya</em></h1>
+    <p class="hero-tagline">
+      I build distributed systems, think about language models,
+      write about ideas worth remembering, and photograph the world in between.
+    </p>
+    <div class="hero-cta">
+      <a href="#blog" class="btn btn-primary">Read the diary</a>
+      <a href="#photography" class="btn btn-ghost">See my photos</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Blog posts</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">48+</div>
+        <div class="stat-label">Photographs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">SBU</div>
+        <div class="stat-label">MS Computer Science</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Curiosity</div>
+      </div>
+    </div>
+
+    <div class="hero-divider"></div>
+
+    <div class="hero-links">
+      <a class="hero-link" href="https://github.com/shubhamrj" target="_blank" rel="noopener">
+        <span>GitHub — shubhamrj</span>
+        <span>↗</span>
+      </a>
+      <a class="hero-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
+        <span>LinkedIn — Shubham Jawandhiya</span>
+        <span>↗</span>
+      </a>
+      <a class="hero-link" href="https://x.com/ShubhamRJ28" target="_blank" rel="noopener">
+        <span>Twitter — @ShubhamRJ28</span>
+        <span>↗</span>
+      </a>
+      <a class="hero-link" href="mailto:shubhamjawandhiya@gmail.com">
+        <span>Email — say hello</span>
+        <span>↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────────────────────────────── -->
+<section id="about" class="site-section fade-in">
+  <div class="about-sidebar">
+    <p class="about-label">About me</p>
+    <!--
+      To add your photo, replace the div.about-photo-placeholder below with:
+      <img class="about-photo" src="assets/photo.jpg" alt="Shubham Jawandhiya" />
+    -->
+    <div class="about-photo-placeholder">
+      <span class="initials">SJ</span>
+    </div>
+    <div class="about-tags">
+      <span class="tag">Distributed Systems</span>
+      <span class="tag">NLP / LLMs</span>
+      <span class="tag">Frontend</span>
+      <span class="tag">React</span>
+      <span class="tag">Go</span>
+      <span class="tag">Python</span>
+      <span class="tag">Photography</span>
+      <span class="tag">Stony Brook</span>
+    </div>
+  </div>
+
+  <div class="about-content">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">A bit about me</h2>
+    </div>
+
+    <p class="about-intro">
+      Graduate student at Stony Brook University, studying Computer Science
+      with a focus on distributed systems and language models.
+    </p>
+
+    <div class="about-body">
+      <p>I'm drawn to systems that need to work at scale — the kind where a single
+      failure can cascade, where consensus is hard to achieve, and where the tradeoffs
+      between consistency and availability are real and daily.</p>
+      <p>On the side, I've spent years working in frontend engineering, building code
+      editors and interfaces that developers actually enjoy using. There's something
+      deeply satisfying about crafting experiences that feel invisible — where the
+      tool disappears and the thinking shines through.</p>
+      <p>I write publicly because it forces precision. A half-formed idea survives
+      inside your head; it doesn't survive a blank page. When I'm not at a keyboard,
+      I'm out with a camera — finding frames in everyday moments.</p>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-cell">
+        <div class="skill-area">Systems</div>
+        <div class="skill-items">Distributed consensus<br>Raft / etcd<br>Event-driven arch<br>Database internals</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-area">ML / NLP</div>
+        <div class="skill-items">Large language models<br>Dialogue systems<br>PyTorch<br>HuggingFace</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-area">Frontend</div>
+        <div class="skill-items">React / Next.js<br>TypeScript<br>Code editors<br>Component systems</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WORK ───────────────────────────────────────────────────────────────── -->
+<section id="work" class="site-section fade-in">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Experience</h2>
+  </div>
+
+  <div class="work-grid">
+    <div class="work-item">
+      <div class="work-company">Crio.Do</div>
+      <div class="work-role">Software Engineering Intern</div>
+      <div class="work-period">6 months</div>
+      <p class="work-desc">Built a code editor from scratch for a developer learning platform,
+      enabling learners to build the backend themselves. Responsible for the entire
+      frontend architecture of the editor experience.</p>
+    </div>
+    <div class="work-item">
+      <div class="work-company">Stony Brook University</div>
+      <div class="work-role">Graduate Researcher — NLP</div>
+      <div class="work-period">MS Computer Science</div>
+      <p class="work-desc">Presented research on Social Influence Dialogue Systems at the CS
+      Department NLP Reading Group. Surveying datasets and models for social influence
+      in conversational AI.</p>
+    </div>
+    <div class="work-item">
+      <div class="work-company">Open Source & Personal</div>
+      <div class="work-role">Frontend Engineering</div>
+      <div class="work-period">3+ years</div>
+      <p class="work-desc">Three years building with ReactJS — accumulated practices in component
+      architecture, performance, accessibility, and developer experience. Documented
+      in "The Art of Frontend Engineering."</p>
+    </div>
+    <div class="work-item">
+      <div class="work-company">Independent</div>
+      <div class="work-role">Shubham's Diary — Writer</div>
+      <div class="work-period">2023 – present</div>
+      <p class="work-desc">Writing about distributed systems, engineering practices, ideas worth
+      exploring, and personal reflections. A living document of thinking out loud.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── BLOG ───────────────────────────────────────────────────────────────── -->
+<section id="blog" class="site-section fade-in">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Writing</h2>
+  </div>
+
+  <div class="blog-grid" id="blog-grid">
+    <!-- Populated by blog.js -->
+  </div>
+
+  <div class="load-more-wrap">
+    <button class="btn btn-ghost" id="show-more-btn" onclick="showMorePosts()">
+      Load more posts
+    </button>
+  </div>
+</section>
+
+<!-- ── PHOTOGRAPHY ────────────────────────────────────────────────────────── -->
+<section id="photography" class="site-section fade-in">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Photography</h2>
+  </div>
+
+  <div class="photo-grid" id="photo-grid">
+    <!-- Populated by photography.js -->
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
+<section id="contact" class="site-section fade-in">
+  <div>
+    <div class="section-header" style="border-bottom: none; margin-bottom: 1rem;">
+      <span class="section-num">05</span>
+    </div>
+    <h2 class="contact-heading">Let's<br><em>talk.</em></h2>
+    <p class="contact-sub">
+      Whether it's a collaboration, an idea you want to stress-test,
+      or just to say hello — my inbox is open.
+    </p>
+  </div>
+
+  <div class="contact-links">
+    <a class="contact-link" href="mailto:shubhamjawandhiya@gmail.com">
+      <div>
+        <div class="contact-link-label">Email</div>
+        <div>shubhamjawandhiya@gmail.com</div>
+      </div>
+      <span>↗</span>
+    </a>
+    <a class="contact-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
+      <div>
+        <div class="contact-link-label">LinkedIn</div>
+        <div>Shubham Jawandhiya</div>
+      </div>
+      <span>↗</span>
+    </a>
+    <a class="contact-link" href="https://github.com/shubhamrj" target="_blank" rel="noopener">
+      <div>
+        <div class="contact-link-label">GitHub</div>
+        <div>shubhamrj</div>
+      </div>
+      <span>↗</span>
+    </a>
+    <a class="contact-link" href="https://x.com/ShubhamRJ28" target="_blank" rel="noopener">
+      <div>
+        <div class="contact-link-label">Twitter</div>
+        <div>@ShubhamRJ28</div>
+      </div>
+      <span>↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+<footer>
+  <span class="footer-copy">© 2025 Shubham Jawandhiya. All rights reserved.</span>
+  <span class="footer-sig">Made with intention.</span>
+</footer>
+
+<!-- ── BLOG POST OVERLAY ──────────────────────────────────────────────────── -->
+<div class="blog-overlay" id="blog-overlay" role="dialog" aria-modal="true" aria-label="Blog post reader">
+  <div class="overlay-nav">
+    <button class="overlay-back" onclick="closePost()">← Back to writing</button>
+    <span class="overlay-category" id="overlay-cat"></span>
+  </div>
+  <div class="overlay-content">
+    <div class="post-header">
+      <h1 class="post-title" id="post-title"></h1>
+      <div class="post-meta-line">
+        <span class="post-date" id="post-date"></span>
+        <span class="post-read-time" id="post-read-time"></span>
+      </div>
+    </div>
+    <div class="post-body" id="post-body"></div>
+  </div>
+</div>
+
+<!-- ── PHOTO LIGHTBOX ─────────────────────────────────────────────────────── -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox-close" onclick="closeLightbox()">Close ✕</button>
+  <button class="lightbox-prev" onclick="lightboxPrev(event)">‹</button>
+  <img id="lightbox-img" src="" alt="Full size photograph" />
+  <button class="lightbox-next" onclick="lightboxNext(event)">›</button>
+</div>
+
+<!-- ── SCRIPTS ────────────────────────────────────────────────────────────── -->
+<!-- marked.js: Markdown → HTML parser -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="js/theme.js"></script>
+<script src="js/blog.js"></script>
+<script src="js/photography.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

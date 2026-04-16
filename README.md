@@ -1,45 +1,163 @@
-# Chirpy Starter [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)](https://rubygems.org/gems/jekyll-theme-chirpy) [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
-Hi
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders `/_data`, `/_layouts`, `/_includes`, `/_sass` and `/assets`, as well as a small part of options of the `/_config.yml` file from the theme's gem. If you have ever installed this theme gem, you can use the command `bundle info --path jekyll-theme-chirpy` to locate these files.
+# Shubham Jawandhiya — Personal Site
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being able to enjoy the out-of-the-box experience when using feature-rich themes.
+A clean, maintainable static site built for GitHub Pages.
+No build tools. No dependencies to install. Just files.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your Jekyll site. The following is a list of targets:
+---
 
-```shell
+## File structure
+
+```
 .
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+├── index.html              ← Site shell (HTML only, no content logic)
+│
+├── css/
+│   ├── tokens.css          ← Design tokens: colors, fonts, light/dark themes
+│   ├── layout.css          ← Page layout: nav, hero, sections, footer
+│   ├── components.css      ← UI components: cards, grids, buttons, photo grid
+│   └── post.css            ← Blog post reader overlay + markdown styles
+│
+├── js/
+│   ├── theme.js            ← Light/dark toggle with localStorage persistence
+│   ├── blog.js             ← Blog grid renderer + post fetcher (POST_INDEX lives here)
+│   ├── photography.js      ← Photo grid + lightbox (PHOTOS list lives here)
+│   └── main.js             ← Scroll animations + active nav highlight
+│
+├── posts/
+│   ├── TEMPLATE.md         ← Copy this to write a new post
+│   ├── peter-thiel-question.md
+│   ├── distributed-consensus.md
+│   ├── social-influence-dialogue.md
+│   ├── distributed-systems-papers.md
+│   ├── frontend-engineering.md
+│   ├── code-editors.md
+│   ├── personal-recommendations.md
+│   ├── random-ideas.md
+│   └── llms-for-hiring.md
+│
+└── assets/                 ← (create this) for your photo, favicon, etc.
+    └── photo.jpg           ← Optional: your portrait for the About section
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+---
 
-## Prerequisites
+## Deploy to GitHub Pages
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
+1. Create a repo named `shubhamrj.github.io` (or use your existing one)
+2. Push all files to the `main` branch
+3. Go to **Settings → Pages → Source**: `main` branch, `/ (root)` folder
+4. Live at `https://shubhamrj.github.io`
 
-## Installation
+---
 
-[**Use this template**][use-template] to generate a brand new repository and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
+## Writing a new blog post
 
-Then clone it to your local machine and run:
+### Step 1 — Create the markdown file
 
+Copy `posts/TEMPLATE.md` to `posts/your-post-slug.md` and write your content.
+
+The slug is the filename without `.md`. Use lowercase, hyphens, no spaces.
+
+```bash
+cp posts/TEMPLATE.md posts/my-new-idea.md
 ```
-$ bundle
+
+### Step 2 — Add it to the index
+
+Open `js/blog.js` and add an entry at the top of `POST_INDEX`:
+
+```js
+{
+  id:       'my-new-idea',       // must match your filename (without .md)
+  title:    'My New Idea',
+  date:     'Apr 15, 2026',
+  category: 'Ideas',
+  featured: false,               // set true to make it the big featured card
+  excerpt:  'One sentence shown on the card.',
+},
 ```
 
-## Usage
+That's it. The post will appear in the grid and be fetched from `posts/my-new-idea.md`
+when a reader clicks it.
 
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
+---
 
-## License
+## Adding photos
 
-This work is published under [MIT][mit] License.
+Photos are served from your existing photography repo at:
+`https://shubhamrj.github.io/photography/images/`
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+To add a new photo:
+1. Push the image to `/photography/images/thumbs/` and `/photography/images/fulls/`
+   in your `shubhamrj.github.io` repo
+2. Open `js/photography.js` and add the filename to the `PHOTOS` array
+
+```js
+const PHOTOS = [
+  'your-new-photo.jpg',   // ← add here
+  '1000013634~3.jpg',
+  // ...
+];
+```
+
+---
+
+## Adding your portrait photo
+
+In `index.html`, find the `about-photo-placeholder` div and replace it:
+
+```html
+<!-- Before -->
+<div class="about-photo-placeholder">
+  <span class="initials">SJ</span>
+</div>
+
+<!-- After -->
+<img class="about-photo" src="assets/photo.jpg" alt="Shubham Jawandhiya" />
+```
+
+Upload your photo to `assets/photo.jpg`.
+
+---
+
+## Customizing colors
+
+All color values live in `css/tokens.css`. Edit the `:root` block for light mode
+and the `[data-theme="dark"]` block for dark mode.
+
+```css
+:root {
+  --accent: #c8462b;   /* ← change this to your preferred accent color */
+  /* ... */
+}
+```
+
+---
+
+## Customizing fonts
+
+In `index.html`, update the Google Fonts `<link>` tag to load different fonts,
+then update the variables in `css/tokens.css`:
+
+```css
+:root {
+  --serif: 'Your Serif Font', Georgia, serif;
+  --mono:  'Your Mono Font', monospace;
+  --sans:  'Your Sans Font', system-ui, sans-serif;
+}
+```
+
+---
+
+## Markdown features supported
+
+Posts support full CommonMark Markdown via [marked.js](https://marked.js.org/):
+
+- Headings `# ## ###`
+- **Bold**, *italic*, `inline code`
+- [Links](https://example.com)
+- > Blockquotes
+- Unordered and ordered lists
+- Code blocks with triple backticks (``` ``` ```)
+- Tables
+- Horizontal rules `---`

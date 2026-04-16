@@ -1,0 +1,60 @@
+/* ─── TOKENS.CSS ─────────────────────────────────────────────────────────────
+   Design tokens: color palette, typography, spacing.
+   Both light and dark themes defined here via [data-theme] on <html>.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+/* ── LIGHT THEME (default) ── */
+:root {
+  --paper:        #f4f0e8;
+  --paper-warm:   #ede9df;
+  --paper-deep:   #e5e0d4;
+  --ink:          #0e0e0e;
+  --ink-mid:      #3a3a3a;
+  --ink-muted:    #888;
+  --accent:       #c8462b;
+  --accent-dim:   #e8c5bd;
+  --line:         rgba(14,14,14,0.1);
+  --line-strong:  rgba(14,14,14,0.2);
+
+  --serif:  'Playfair Display', Georgia, serif;
+  --mono:   'DM Mono', 'Courier New', monospace;
+  --sans:   'DM Sans', system-ui, sans-serif;
+}
+
+/* ── DARK THEME ── */
+[data-theme="dark"] {
+  --paper:        #111110;
+  --paper-warm:   #1a1917;
+  --paper-deep:   #222120;
+  --ink:          #ede9df;
+  --ink-mid:      #b8b4aa;
+  --ink-muted:    #666;
+  --accent:       #e05a3a;
+  --accent-dim:   #4a1f14;
+  --line:         rgba(237,233,223,0.08);
+  --line-strong:  rgba(237,233,223,0.15);
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Noise texture overlay — subtle grain on the page */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.45;
+}
