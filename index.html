@@ -161,6 +161,197 @@
       #work .work-layout { grid-template-columns: 1fr; gap: 2rem; }
       #work .work-sidebar { position: static; }
     }
+
+    /* ── BLOG REDESIGN ── */
+
+    /* Category pill badge */
+    .blog-cat-pill {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 2rem;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    /* Featured card */
+    .blog-featured-card {
+      border: 1px solid var(--line-strong);
+      background: var(--paper-warm);
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-bottom: 2.5rem;
+    }
+    .blog-featured-card:hover { background: var(--paper-deep); }
+    .blog-featured-inner {
+      padding: 2.5rem;
+      max-width: 72ch;
+    }
+    .blog-featured-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .blog-featured-label {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      border: 1px solid var(--line-strong);
+      padding: 0.2rem 0.55rem;
+      border-radius: 2rem;
+    }
+    .blog-featured-title {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+    .blog-featured-excerpt {
+      font-size: 0.93rem;
+      color: var(--ink-mid);
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      max-width: 60ch;
+    }
+    .blog-featured-footer {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+    }
+    .blog-date-str {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+    }
+    .blog-read-link {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* Filter tabs */
+    .blog-filters-wrap {
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .blog-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .blog-filter-btn {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 0.85rem 1.25rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: -1px;
+    }
+    .blog-filter-btn:hover { color: var(--ink); }
+    .blog-filter-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .filter-count {
+      font-size: 0.58rem;
+      background: var(--paper-warm);
+      border: 1px solid var(--line-strong);
+      color: var(--ink-muted);
+      padding: 0.1rem 0.4rem;
+      border-radius: 2rem;
+    }
+    .blog-filter-btn.active .filter-count {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--paper);
+    }
+
+    /* Post list */
+    .blog-list {
+      border-left: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+    }
+    .blog-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 1.75rem 2rem;
+      border-bottom: 1px solid var(--line);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .blog-list-item:hover { background: var(--paper-warm); }
+    .blog-list-left { flex: 1; min-width: 0; }
+    .blog-list-top {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.6rem;
+    }
+    .blog-list-title {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.35;
+      margin-bottom: 0.5rem;
+    }
+    .blog-list-excerpt {
+      font-size: 0.83rem;
+      color: var(--ink-muted);
+      line-height: 1.75;
+      font-weight: 300;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .blog-list-arrow {
+      font-size: 1rem;
+      color: var(--line-strong);
+      flex-shrink: 0;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .blog-list-item:hover .blog-list-arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+    .blog-empty {
+      padding: 3rem 2rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 700px) {
+      .blog-featured-inner { padding: 1.5rem; }
+      .blog-list-item { padding: 1.25rem 1rem; }
+      .blog-filter-btn { padding: 0.7rem 0.8rem; font-size: 0.62rem; }
+    }
   </style>
 </head>
 <body>
@@ -392,15 +583,16 @@
     <h2 class="section-title">Writing</h2>
   </div>
 
-  <div class="blog-grid" id="blog-grid">
-    <!-- Populated by blog.js -->
+  <!-- Featured post -->
+  <div id="blog-featured"></div>
+
+  <!-- Category filter tabs -->
+  <div class="blog-filters-wrap">
+    <div id="blog-filters" class="blog-filters"></div>
   </div>
 
-  <div class="load-more-wrap">
-    <button class="btn btn-ghost" id="show-more-btn" onclick="showMorePosts()">
-      Load more posts
-    </button>
-  </div>
+  <!-- Post list -->
+  <div id="blog-list" class="blog-list"></div>
 </section>
 
 <!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
