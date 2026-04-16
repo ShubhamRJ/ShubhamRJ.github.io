@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/tokens.css" />
@@ -32,6 +35,7 @@
       position: relative;
       padding-left: 2rem;
     }
+
     .timeline::before {
       content: '';
       position: absolute;
@@ -41,13 +45,16 @@
       width: 1px;
       background: var(--line-strong);
     }
+
     .timeline-item {
       position: relative;
       padding: 0 0 3rem 2.5rem;
     }
+
     .timeline-item:last-child {
       padding-bottom: 0;
     }
+
     .timeline-dot {
       position: absolute;
       left: -2rem;
@@ -60,10 +67,12 @@
       box-shadow: 0 0 0 1px var(--accent);
       transform: translateX(-4px);
     }
+
     .timeline-dot.dim {
       background: var(--ink-muted);
       box-shadow: 0 0 0 1px var(--ink-muted);
     }
+
     .timeline-period {
       font-family: var(--mono);
       font-size: 0.65rem;
@@ -72,6 +81,7 @@
       color: var(--accent);
       margin-bottom: 0.5rem;
     }
+
     .timeline-role {
       font-family: var(--serif);
       font-size: 1.2rem;
@@ -80,6 +90,7 @@
       line-height: 1.3;
       margin-bottom: 0.25rem;
     }
+
     .timeline-company {
       font-family: var(--mono);
       font-size: 0.72rem;
@@ -87,6 +98,7 @@
       color: var(--ink-muted);
       margin-bottom: 0.9rem;
     }
+
     .timeline-desc {
       font-size: 0.88rem;
       color: var(--ink-mid);
@@ -94,12 +106,14 @@
       font-weight: 300;
       max-width: 60ch;
     }
+
     .timeline-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-top: 0.85rem;
     }
+
     .timeline-tag {
       font-family: var(--mono);
       font-size: 0.6rem;
@@ -116,10 +130,12 @@
       gap: 4rem;
       align-items: start;
     }
+
     #work .work-sidebar {
       position: sticky;
       top: 6rem;
     }
+
     .work-sidebar-label {
       font-family: var(--mono);
       font-size: 0.65rem;
@@ -128,6 +144,7 @@
       color: var(--ink-muted);
       margin-bottom: 1rem;
     }
+
     .work-sidebar-summary {
       font-family: var(--serif);
       font-size: 1.05rem;
@@ -136,11 +153,13 @@
       line-height: 1.6;
       margin-bottom: 1.5rem;
     }
+
     .work-sidebar-links {
       display: flex;
       flex-direction: column;
       gap: 0;
     }
+
     .work-sidebar-link {
       font-family: var(--mono);
       font-size: 0.68rem;
@@ -155,11 +174,20 @@
       justify-content: space-between;
       transition: color 0.2s;
     }
-    .work-sidebar-link:hover { color: var(--accent); }
+
+    .work-sidebar-link:hover {
+      color: var(--accent);
+    }
 
     @media (max-width: 900px) {
-      #work .work-layout { grid-template-columns: 1fr; gap: 2rem; }
-      #work .work-sidebar { position: static; }
+      #work .work-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      #work .work-sidebar {
+        position: static;
+      }
     }
 
     /* ── BLOG REDESIGN ── */
@@ -184,17 +212,23 @@
       transition: background 0.2s;
       margin-bottom: 2.5rem;
     }
-    .blog-featured-card:hover { background: var(--paper-deep); }
+
+    .blog-featured-card:hover {
+      background: var(--paper-deep);
+    }
+
     .blog-featured-inner {
       padding: 2.5rem;
       max-width: 72ch;
     }
+
     .blog-featured-meta {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       margin-bottom: 1.25rem;
     }
+
     .blog-featured-label {
       font-family: var(--mono);
       font-size: 0.6rem;
@@ -205,6 +239,7 @@
       padding: 0.2rem 0.55rem;
       border-radius: 2rem;
     }
+
     .blog-featured-title {
       font-family: var(--serif);
       font-size: clamp(1.5rem, 2.5vw, 2.1rem);
@@ -213,6 +248,7 @@
       line-height: 1.25;
       margin-bottom: 1rem;
     }
+
     .blog-featured-excerpt {
       font-size: 0.93rem;
       color: var(--ink-mid);
@@ -221,6 +257,7 @@
       margin-bottom: 1.5rem;
       max-width: 60ch;
     }
+
     .blog-featured-footer {
       display: flex;
       align-items: center;
@@ -228,12 +265,14 @@
       padding-top: 1.25rem;
       border-top: 1px solid var(--line);
     }
+
     .blog-date-str {
       font-family: var(--mono);
       font-size: 0.65rem;
       color: var(--ink-muted);
       letter-spacing: 0.05em;
     }
+
     .blog-read-link {
       font-family: var(--mono);
       font-size: 0.65rem;
@@ -247,11 +286,13 @@
       margin-bottom: 0;
       border-bottom: 1px solid var(--line);
     }
+
     .blog-filters {
       display: flex;
       flex-wrap: wrap;
       gap: 0;
     }
+
     .blog-filter-btn {
       font-family: var(--mono);
       font-size: 0.68rem;
@@ -269,11 +310,16 @@
       gap: 0.4rem;
       margin-bottom: -1px;
     }
-    .blog-filter-btn:hover { color: var(--ink); }
+
+    .blog-filter-btn:hover {
+      color: var(--ink);
+    }
+
     .blog-filter-btn.active {
       color: var(--accent);
       border-bottom-color: var(--accent);
     }
+
     .filter-count {
       font-size: 0.58rem;
       background: var(--paper-warm);
@@ -282,6 +328,7 @@
       padding: 0.1rem 0.4rem;
       border-radius: 2rem;
     }
+
     .blog-filter-btn.active .filter-count {
       background: var(--accent);
       border-color: var(--accent);
@@ -293,6 +340,7 @@
       border-left: 1px solid var(--line);
       border-right: 1px solid var(--line);
     }
+
     .blog-list-item {
       display: flex;
       align-items: center;
@@ -303,14 +351,23 @@
       cursor: pointer;
       transition: background 0.2s;
     }
-    .blog-list-item:hover { background: var(--paper-warm); }
-    .blog-list-left { flex: 1; min-width: 0; }
+
+    .blog-list-item:hover {
+      background: var(--paper-warm);
+    }
+
+    .blog-list-left {
+      flex: 1;
+      min-width: 0;
+    }
+
     .blog-list-top {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       margin-bottom: 0.6rem;
     }
+
     .blog-list-title {
       font-family: var(--serif);
       font-size: 1.05rem;
@@ -319,6 +376,7 @@
       line-height: 1.35;
       margin-bottom: 0.5rem;
     }
+
     .blog-list-excerpt {
       font-size: 0.83rem;
       color: var(--ink-muted);
@@ -329,16 +387,19 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
     .blog-list-arrow {
       font-size: 1rem;
       color: var(--line-strong);
       flex-shrink: 0;
       transition: color 0.2s, transform 0.2s;
     }
+
     .blog-list-item:hover .blog-list-arrow {
       color: var(--accent);
       transform: translateX(3px);
     }
+
     .blog-empty {
       padding: 3rem 2rem;
       font-family: var(--mono);
@@ -348,329 +409,351 @@
     }
 
     @media (max-width: 700px) {
-      .blog-featured-inner { padding: 1.5rem; }
-      .blog-list-item { padding: 1.25rem 1rem; }
-      .blog-filter-btn { padding: 0.7rem 0.8rem; font-size: 0.62rem; }
+      .blog-featured-inner {
+        padding: 1.5rem;
+      }
+
+      .blog-list-item {
+        padding: 1.25rem 1rem;
+      }
+
+      .blog-filter-btn {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.62rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- ── NAVIGATION ─────────────────────────────────────────────────────────── -->
-<nav>
-  <a class="nav-logo" href="#home">SJ — diary</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#blog">Writing</a></li>
-    <li><a href="photography.html">Photography</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><button id="theme-toggle" aria-label="Toggle theme"></button></li>
-  </ul>
-</nav>
+  <!-- ── NAVIGATION ─────────────────────────────────────────────────────────── -->
+  <nav>
+    <a class="nav-logo" href="#home">SJ — diary</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#blog">Writing</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle" aria-label="Toggle theme"></button></li>
+    </ul>
+  </nav>
 
-<!-- ── HERO ───────────────────────────────────────────────────────────────── -->
-<section id="home">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Software Engineer · Writer · Photographer</p>
-    <h1 class="hero-name">Shubham<br><em>Jawandhiya</em></h1>
-    <p class="hero-tagline">
-      I build distributed systems, think about language models,
-      write about ideas worth remembering, and photograph the world in between.
-    </p>
-    <div class="hero-cta">
-      <a href="#blog" class="btn btn-primary">Read the diary</a>
-      <a href="photography.html" class="btn btn-ghost">See my photos</a>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-num">15+</div>
-        <div class="stat-label">Blog posts</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">48+</div>
-        <div class="stat-label">Photographs</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">SBU</div>
-        <div class="stat-label">MS Computer Science</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">∞</div>
-        <div class="stat-label">Curiosity</div>
+  <!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+  <section id="home">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Software Engineer · Writer · Photographer</p>
+      <h1 class="hero-name">Shubham<br><em>Jawandhiya</em></h1>
+      <p class="hero-tagline">
+        I build distributed systems, think about language models,
+        write about ideas worth remembering, and photograph the world in between.
+      </p>
+      <div class="hero-cta">
+        <a href="#blog" class="btn btn-primary">Read the diary</a>
+        <a href="photography.html" class="btn btn-ghost">See my photos</a>
       </div>
     </div>
 
-    <div class="hero-divider"></div>
+    <div class="hero-right">
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Blog posts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">48+</div>
+          <div class="stat-label">Photographs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">SBU</div>
+          <div class="stat-label">MS Computer Science</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Curiosity</div>
+        </div>
+      </div>
 
-    <div class="hero-links">
-      <a class="hero-link" href="https://github.com/shubhamrj" target="_blank" rel="noopener">
-        <span>GitHub — shubhamrj</span>
-        <span>↗</span>
-      </a>
-      <a class="hero-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
-        <span>LinkedIn — Shubham Jawandhiya</span>
-        <span>↗</span>
-      </a>
-      <a class="hero-link" href="https://x.com/ShubhamRJ28" target="_blank" rel="noopener">
-        <span>Twitter — @ShubhamRJ28</span>
-        <span>↗</span>
-      </a>
-      <a class="hero-link" href="mailto:shubhamjawandhiya@gmail.com">
-        <span>Email — say hello</span>
-        <span>↗</span>
-      </a>
+      <div class="hero-divider"></div>
+
+      <div class="hero-links">
+        <a class="hero-link" href="https://github.com/shubhamrj" target="_blank" rel="noopener">
+          <span>GitHub — shubhamrj</span>
+          <span>↗</span>
+        </a>
+        <a class="hero-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
+          <span>LinkedIn — Shubham Jawandhiya</span>
+          <span>↗</span>
+        </a>
+        <a class="hero-link" href="https://x.com/ShubhamRJ28" target="_blank" rel="noopener">
+          <span>Twitter — @ShubhamRJ28</span>
+          <span>↗</span>
+        </a>
+        <a class="hero-link" href="mailto:shubhamjawandhiya@gmail.com">
+          <span>Email — say hello</span>
+          <span>↗</span>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── ABOUT ──────────────────────────────────────────────────────────────── -->
-<section id="about" class="site-section fade-in">
-  <div class="about-sidebar">
-    <p class="about-label">About me</p>
-    <!--
+  <!-- ── ABOUT ──────────────────────────────────────────────────────────────── -->
+  <section id="about" class="site-section fade-in">
+    <div class="about-sidebar">
+      <p class="about-label">About me</p>
+      <!--
       To add your photo, replace the div.about-photo-placeholder below with:
       <img class="about-photo" src="assets/photo.jpg" alt="Shubham Jawandhiya" />
     -->
-    <div class="about-photo-placeholder">
-      <span class="initials">SJ</span>
-    </div>
-    <div class="about-tags">
-      <span class="tag">Distributed Systems</span>
-      <span class="tag">NLP / LLMs</span>
-      <span class="tag">Frontend</span>
-      <span class="tag">React</span>
-      <span class="tag">Go</span>
-      <span class="tag">Python</span>
-      <span class="tag">Photography</span>
-      <span class="tag">Stony Brook</span>
-    </div>
-  </div>
-
-  <div class="about-content">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <h2 class="section-title">A bit about me</h2>
-    </div>
-
-    <p class="about-intro">
-      Graduate student at Stony Brook University, studying Computer Science
-      with a focus on distributed systems and language models.
-    </p>
-
-    <div class="about-body">
-      <p>I'm drawn to systems that need to work at scale — the kind where a single
-      failure can cascade, where consensus is hard to achieve, and where the tradeoffs
-      between consistency and availability are real and daily.</p>
-      <p>On the side, I've spent years working in frontend engineering, building code
-      editors and interfaces that developers actually enjoy using. There's something
-      deeply satisfying about crafting experiences that feel invisible — where the
-      tool disappears and the thinking shines through.</p>
-      <p>I write publicly because it forces precision. A half-formed idea survives
-      inside your head; it doesn't survive a blank page. When I'm not at a keyboard,
-      I'm out with a camera — finding frames in everyday moments.</p>
-    </div>
-
-    <div class="skill-grid">
-      <div class="skill-cell">
-        <div class="skill-area">Systems</div>
-        <div class="skill-items">Distributed consensus<br>Raft / etcd<br>Event-driven arch<br>Database internals</div>
+      <div class="about-photo-placeholder">
+        <span class="initials">SJ</span>
       </div>
-      <div class="skill-cell">
-        <div class="skill-area">ML / NLP</div>
-        <div class="skill-items">Large language models<br>Dialogue systems<br>PyTorch<br>HuggingFace</div>
-      </div>
-      <div class="skill-cell">
-        <div class="skill-area">Frontend</div>
-        <div class="skill-items">React / Next.js<br>TypeScript<br>Code editors<br>Component systems</div>
+      <div class="about-tags">
+        <span class="tag">Distributed Systems</span>
+        <span class="tag">NLP / LLMs</span>
+        <span class="tag">Frontend</span>
+        <span class="tag">React</span>
+        <span class="tag">Go</span>
+        <span class="tag">Python</span>
+        <span class="tag">Photography</span>
+        <span class="tag">Stony Brook</span>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ── WORK ───────────────────────────────────────────────────────────────── -->
-<section id="work" class="site-section fade-in">
-  <div class="section-header">
-    <span class="section-num">02</span>
-    <h2 class="section-title">Experience</h2>
-  </div>
+    <div class="about-content">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">A bit about me</h2>
+      </div>
 
-  <div class="work-layout">
-    <div class="work-sidebar">
-      <p class="work-sidebar-label">Career so far</p>
-      <p class="work-sidebar-summary">
-        Building at the intersection of distributed systems, NLP research, and frontend engineering.
+      <p class="about-intro">
+        Graduate student at Stony Brook University, studying Computer Science
+        with a focus on distributed systems and language models.
       </p>
-      <div class="work-sidebar-links">
-        <a class="work-sidebar-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
-          <span>Full résumé</span>
-          <span>↗</span>
-        </a>
-        <a class="work-sidebar-link" href="mailto:shubhamjawandhiya@gmail.com">
-          <span>Open to opportunities</span>
-          <span>↗</span>
-        </a>
+
+      <div class="about-body">
+        <p>I'm a Software Engineer at Microsoft, where I live in the world of
+          Azure's datacenter platform. I'm drawn to systems that push the
+          limits of scale--environments where "consensus" is a hard-won
+          battle and the tug-of-war between consistency and availability is
+          a daily reality. I don't just write code; I design systems built
+          to survive the chaos of cascading failures.
+
+          When I step away from the terminal, I'm usually seeking perspective.
+          Whether it's through the lens of a telescope, the pages of a
+          philosophy text, or a camera frame on the streets of Seattle, I'm
+          interested in the "big picture." To keep grounded, I run, hike,
+          and hunt for the city's best espresso.
+
+          Up for a coffee chat? I'm always looking for new music and even
+          better conversations. Let's connect.</p>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-cell">
+          <div class="skill-area">Systems</div>
+          <div class="skill-items">Distributed consensus<br>Raft / etcd<br>Event-driven arch<br>Database internals</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-area">ML / NLP</div>
+          <div class="skill-items">Large language models<br>Dialogue systems<br>PyTorch<br>HuggingFace</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-area">Frontend</div>
+          <div class="skill-items">React / Next.js<br>TypeScript<br>Code editors<br>Component systems</div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="timeline">
+  <!-- ── WORK ───────────────────────────────────────────────────────────────── -->
+  <section id="work" class="site-section fade-in">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-period">2023 – Present</div>
-        <div class="timeline-role">Writer — Shubham's Diary</div>
-        <div class="timeline-company">Independent</div>
-        <p class="timeline-desc">Writing about distributed systems, engineering practices, ideas worth exploring, and personal reflections. A living document of thinking out loud.</p>
-        <div class="timeline-tags">
-          <span class="timeline-tag">Writing</span>
-          <span class="timeline-tag">Engineering</span>
-          <span class="timeline-tag">Ideas</span>
+    <div class="work-layout">
+      <div class="work-sidebar">
+        <p class="work-sidebar-label">Career so far</p>
+        <p class="work-sidebar-summary">
+          Building at the intersection of distributed systems, NLP research, and frontend engineering.
+        </p>
+        <div class="work-sidebar-links">
+          <a class="work-sidebar-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank"
+            rel="noopener">
+            <span>Full résumé</span>
+            <span>↗</span>
+          </a>
+          <a class="work-sidebar-link" href="mailto:shubhamjawandhiya@gmail.com">
+            <span>Open to opportunities</span>
+            <span>↗</span>
+          </a>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-period">2024</div>
-        <div class="timeline-role">Graduate Researcher — NLP</div>
-        <div class="timeline-company">Stony Brook University</div>
-        <p class="timeline-desc">Presented research on Social Influence Dialogue Systems at the CS Department NLP Reading Group. Surveying datasets and models for social influence in conversational AI.</p>
-        <div class="timeline-tags">
-          <span class="timeline-tag">NLP</span>
-          <span class="timeline-tag">Research</span>
-          <span class="timeline-tag">LLMs</span>
-          <span class="timeline-tag">Dialogue Systems</span>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2023 – Present</div>
+          <div class="timeline-role">Writer — Shubham's Diary</div>
+          <div class="timeline-company">Independent</div>
+          <p class="timeline-desc">Writing about distributed systems, engineering practices, ideas worth exploring, and
+            personal reflections. A living document of thinking out loud.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Writing</span>
+            <span class="timeline-tag">Engineering</span>
+            <span class="timeline-tag">Ideas</span>
+          </div>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot dim"></div>
-        <div class="timeline-period">3+ Years</div>
-        <div class="timeline-role">Frontend Engineer</div>
-        <div class="timeline-company">Open Source & Personal Projects</div>
-        <p class="timeline-desc">Three years building with ReactJS — accumulated practices in component architecture, performance, accessibility, and developer experience. Documented in "The Art of Frontend Engineering."</p>
-        <div class="timeline-tags">
-          <span class="timeline-tag">React</span>
-          <span class="timeline-tag">TypeScript</span>
-          <span class="timeline-tag">Next.js</span>
-          <span class="timeline-tag">Component Systems</span>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2024</div>
+          <div class="timeline-role">Graduate Researcher — NLP</div>
+          <div class="timeline-company">Stony Brook University</div>
+          <p class="timeline-desc">Presented research on Social Influence Dialogue Systems at the CS Department NLP
+            Reading Group. Surveying datasets and models for social influence in conversational AI.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">NLP</span>
+            <span class="timeline-tag">Research</span>
+            <span class="timeline-tag">LLMs</span>
+            <span class="timeline-tag">Dialogue Systems</span>
+          </div>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot dim"></div>
-        <div class="timeline-period">6 Months</div>
-        <div class="timeline-role">Software Engineering Intern</div>
-        <div class="timeline-company">Crio.Do</div>
-        <p class="timeline-desc">Built a code editor from scratch for a developer learning platform, enabling learners to build the backend themselves. Responsible for the entire frontend architecture of the editor experience.</p>
-        <div class="timeline-tags">
-          <span class="timeline-tag">Code Editors</span>
-          <span class="timeline-tag">Frontend Architecture</span>
-          <span class="timeline-tag">Language Server</span>
+        <div class="timeline-item">
+          <div class="timeline-dot dim"></div>
+          <div class="timeline-period">3+ Years</div>
+          <div class="timeline-role">Frontend Engineer</div>
+          <div class="timeline-company">Open Source & Personal Projects</div>
+          <p class="timeline-desc">Three years building with ReactJS — accumulated practices in component architecture,
+            performance, accessibility, and developer experience. Documented in "The Art of Frontend Engineering."</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">React</span>
+            <span class="timeline-tag">TypeScript</span>
+            <span class="timeline-tag">Next.js</span>
+            <span class="timeline-tag">Component Systems</span>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
-</section>
+        <div class="timeline-item">
+          <div class="timeline-dot dim"></div>
+          <div class="timeline-period">6 Months</div>
+          <div class="timeline-role">Software Engineering Intern</div>
+          <div class="timeline-company">Crio.Do</div>
+          <p class="timeline-desc">Built a code editor from scratch for a developer learning platform, enabling learners
+            to build the backend themselves. Responsible for the entire frontend architecture of the editor experience.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Code Editors</span>
+            <span class="timeline-tag">Frontend Architecture</span>
+            <span class="timeline-tag">Language Server</span>
+          </div>
+        </div>
 
-<!-- ── BLOG ───────────────────────────────────────────────────────────────── -->
-<section id="blog" class="site-section fade-in">
-  <div class="section-header">
-    <span class="section-num">03</span>
-    <h2 class="section-title">Writing</h2>
-  </div>
-
-  <!-- Featured post -->
-  <div id="blog-featured"></div>
-
-  <!-- Category filter tabs -->
-  <div class="blog-filters-wrap">
-    <div id="blog-filters" class="blog-filters"></div>
-  </div>
-
-  <!-- Post list -->
-  <div id="blog-list" class="blog-list"></div>
-</section>
-
-<!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
-<section id="contact" class="site-section fade-in">
-  <div>
-    <div class="section-header" style="border-bottom: none; margin-bottom: 1rem;">
-      <span class="section-num">04</span>
-    </div>
-    <h2 class="contact-heading">Let's<br><em>talk.</em></h2>
-    <p class="contact-sub">
-      Whether it's a collaboration, an idea you want to stress-test,
-      or just to say hello — my inbox is open.
-    </p>
-  </div>
-
-  <div class="contact-links">
-    <a class="contact-link" href="mailto:shubhamjawandhiya@gmail.com">
-      <div>
-        <div class="contact-link-label">Email</div>
-        <div>shubhamjawandhiya@gmail.com</div>
-      </div>
-      <span>↗</span>
-    </a>
-    <a class="contact-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
-      <div>
-        <div class="contact-link-label">LinkedIn</div>
-        <div>Shubham Jawandhiya</div>
-      </div>
-      <span>↗</span>
-    </a>
-    <a class="contact-link" href="https://github.com/shubhamrj" target="_blank" rel="noopener">
-      <div>
-        <div class="contact-link-label">GitHub</div>
-        <div>shubhamrj</div>
-      </div>
-      <span>↗</span>
-    </a>
-    <a class="contact-link" href="https://x.com/ShubhamRJ28" target="_blank" rel="noopener">
-      <div>
-        <div class="contact-link-label">Twitter</div>
-        <div>@ShubhamRJ28</div>
-      </div>
-      <span>↗</span>
-    </a>
-  </div>
-</section>
-
-<!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
-<footer>
-  <span class="footer-copy">© 2025 Shubham Jawandhiya. All rights reserved.</span>
-  <span class="footer-sig">Made with intention.</span>
-</footer>
-
-<!-- ── BLOG POST OVERLAY ──────────────────────────────────────────────────── -->
-<div class="blog-overlay" id="blog-overlay" role="dialog" aria-modal="true" aria-label="Blog post reader">
-  <div class="overlay-nav">
-    <button class="overlay-back" onclick="closePost()">← Back to writing</button>
-    <span class="overlay-category" id="overlay-cat"></span>
-  </div>
-  <div class="overlay-content">
-    <div class="post-header">
-      <h1 class="post-title" id="post-title"></h1>
-      <div class="post-meta-line">
-        <span class="post-date" id="post-date"></span>
-        <span class="post-read-time" id="post-read-time"></span>
       </div>
     </div>
-    <div class="post-body" id="post-body"></div>
+  </section>
+
+  <!-- ── BLOG ───────────────────────────────────────────────────────────────── -->
+  <section id="blog" class="site-section fade-in">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Writing</h2>
+    </div>
+
+    <!-- Featured post -->
+    <div id="blog-featured"></div>
+
+    <!-- Category filter tabs -->
+    <div class="blog-filters-wrap">
+      <div id="blog-filters" class="blog-filters"></div>
+    </div>
+
+    <!-- Post list -->
+    <div id="blog-list" class="blog-list"></div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
+  <section id="contact" class="site-section fade-in">
+    <div>
+      <div class="section-header" style="border-bottom: none; margin-bottom: 1rem;">
+        <span class="section-num">04</span>
+      </div>
+      <h2 class="contact-heading">Let's<br><em>talk.</em></h2>
+      <p class="contact-sub">
+        Whether it's a collaboration, an idea you want to stress-test,
+        or just to say hello — my inbox is open.
+      </p>
+    </div>
+
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:shubhamjawandhiya@gmail.com">
+        <div>
+          <div class="contact-link-label">Email</div>
+          <div>shubhamjawandhiya@gmail.com</div>
+        </div>
+        <span>↗</span>
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/shubhamjawandhiya/" target="_blank" rel="noopener">
+        <div>
+          <div class="contact-link-label">LinkedIn</div>
+          <div>Shubham Jawandhiya</div>
+        </div>
+        <span>↗</span>
+      </a>
+      <a class="contact-link" href="https://github.com/shubhamrj" target="_blank" rel="noopener">
+        <div>
+          <div class="contact-link-label">GitHub</div>
+          <div>shubhamrj</div>
+        </div>
+        <span>↗</span>
+      </a>
+      <a class="contact-link" href="https://x.com/ShubhamRJ28" target="_blank" rel="noopener">
+        <div>
+          <div class="contact-link-label">Twitter</div>
+          <div>@ShubhamRJ28</div>
+        </div>
+        <span>↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <footer>
+    <span class="footer-copy">© 2025 Shubham Jawandhiya. All rights reserved.</span>
+    <span class="footer-sig">Made with intention.</span>
+  </footer>
+
+  <!-- ── BLOG POST OVERLAY ──────────────────────────────────────────────────── -->
+  <div class="blog-overlay" id="blog-overlay" role="dialog" aria-modal="true" aria-label="Blog post reader">
+    <div class="overlay-nav">
+      <button class="overlay-back" onclick="closePost()">← Back to writing</button>
+      <span class="overlay-category" id="overlay-cat"></span>
+    </div>
+    <div class="overlay-content">
+      <div class="post-header">
+        <h1 class="post-title" id="post-title"></h1>
+        <div class="post-meta-line">
+          <span class="post-date" id="post-date"></span>
+          <span class="post-read-time" id="post-read-time"></span>
+        </div>
+      </div>
+      <div class="post-body" id="post-body"></div>
+    </div>
   </div>
-</div>
 
-<!-- ── SCRIPTS ────────────────────────────────────────────────────────────── -->
-<!-- marked.js: Markdown → HTML parser -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- ── SCRIPTS ────────────────────────────────────────────────────────────── -->
+  <!-- marked.js: Markdown → HTML parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-<script src="js/theme.js"></script>
-<script src="js/blog.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
